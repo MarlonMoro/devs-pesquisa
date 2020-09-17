@@ -1,6 +1,6 @@
 package br.com.devs.DevsPesquisa.entities;
 
-import br.com.devs.DevsPesquisa.entities.enums.Plataform;
+import br.com.devs.DevsPesquisa.entities.enums.Platform;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -23,7 +23,7 @@ public class Game {
 
   private String title;
 
-  private Plataform plataform;
+  private Platform platform;
 
   @ManyToOne
   @JoinColumn(name = "genre_id")
@@ -40,8 +40,8 @@ public class Game {
     return title;
   }
 
-  public Plataform getPlataform() {
-    return plataform;
+  public Platform getPlataform() {
+    return platform;
   }
 
   public Genre getGenre() {
