@@ -28,6 +28,35 @@ public class Record {
   @JoinColumn(name = "game_id")
   private Game game;
 
+  public Record() {
+  }
+
+  public Record(String name, Integer age, Game game) {
+    this.name = name;
+    this.age = age;
+    this.moment = LocalDateTime.now();
+    this.game = game;
+  }
+
+  public Long getId() {
+    return id;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public Integer getAge() {
+    return age;
+  }
+
+  public LocalDateTime getMoment() {
+    return moment;
+  }
+
+  public Game getGame() {
+    return game;
+  }
 
   @Override
   public boolean equals(Object o) {
