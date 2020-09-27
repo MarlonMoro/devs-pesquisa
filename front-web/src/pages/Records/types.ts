@@ -1,9 +1,9 @@
 export type RecordsResponse = {
-    content: Recorditem[];
+    content: RecordItem[];
     totalPages: number;
 }
 
-export type Recorditem = {
+export type RecordItem = {
     id: number;
     moment: string;
     name: string;
